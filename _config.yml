@@ -4,9 +4,9 @@
 # Site settings
 title: Quick Couriers
 description: |
-  We are known for providing  
-  unparalleled services to our customers  
-  in terms of quality and reliability
+  Quick Courier는 자전거 택배 서비스를 제공하며,  
+  교통체증과 무관하게 고객님의 상품을 빠르고 안전하게 배송하는  
+  암스테르담의 대표적인 택배 서비스 회사입니다.
 owner: Quick Couriers # or company name
 first_published: 2016 # if migrating another site, the year of your first publish
 email: your-email@domain.com
