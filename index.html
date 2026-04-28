@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>스루 아스트로 · @through_astro</title>
+  <meta name="description" content="스루 아스트로 — through_astro 의 링크 모음">
+  <meta property="og:title" content="스루 아스트로 · @through_astro">
+  <meta property="og:description" content="through_astro 의 링크 모음">
+  <meta property="og:image" content="assets/profile.jpg">
+  <link rel="icon" href="assets/profile.jpg">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      min-height: 100vh;
+      background: #0a0c11;
+      color: #f3f4f7;
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+        "Pretendard", "Segoe UI", system-ui, sans-serif;
+      -webkit-font-smoothing: antialiased;
+      display: flex;
+      justify-content: center;
+      padding: 72px 20px 56px;
+    }
+    main {
+      width: 100%;
+      max-width: 440px;
+    }
+    .profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 14px;
+      margin-bottom: 36px;
+    }
+    .avatar {
+      width: 104px;
+      height: 104px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45);
+    }
+    .name {
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin: 0;
+    }
+    .handle {
+      font-size: 14px;
+      color: #8b8e98;
+      margin: 0;
+      font-feature-settings: "tnum";
+    }
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .link {
+      display: block;
+      padding: 16px 20px;
+      background: #14171f;
+      border: 1px solid #232734;
+      border-radius: 14px;
+      color: #f3f4f7;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+      text-align: center;
+      transition:
+        background 160ms ease,
+        border-color 160ms ease,
+        transform 160ms ease;
+    }
+    .link:hover {
+      background: #1b1f2a;
+      border-color: #2e3344;
+      transform: translateY(-1px);
+    }
+    .link:active {
+      transform: translateY(0);
+    }
+    footer {
+      margin-top: 56px;
+      text-align: center;
+      color: #5c606b;
+      font-size: 12px;
+      letter-spacing: 0.02em;
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .link { transition: none; }
+      .link:hover { transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="profile">
+      <img class="avatar" src="assets/profile.jpg" alt="스루 아스트로 프로필 이미지">
+      <h1 class="name">스루 아스트로</h1>
+      <p class="handle">@through_astro</p>
+    </section>
+
+    <nav class="links" aria-label="링크 모음">
+      <a class="link" href="https://www.youtube.com/@ThroughAstro" target="_blank" rel="noopener noreferrer">유튜브 ▶️</a>
+      <a class="link" href="https://app.astrobin.com/u/sulewoo" target="_blank" rel="noopener noreferrer">Astrobin 🖼️</a>
+      <a class="link" href="https://dwarflab.com?aff=329" target="_blank" rel="noopener noreferrer">드워프미니 구매 🔭</a>
+      <a class="link" href="https://s.click.aliexpress.com/e/_c4pR7au1" target="_blank" rel="noopener noreferrer">Svbony MK127 구매 🔭</a>
+    </nav>
+
+    <footer>© 2026 through_astro</footer>
+  </main>
+</body>
+</html>
